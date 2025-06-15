@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoDan — Хлеб из пророщенной пшеницы</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/scripts.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <img src="/images/logoEcoDan.png" alt="Логотип">
+    <h1>ХЛЕБ ИЗ ПРОРОЩЕННОЙ ПШЕНИЦЫ — ПОЛЬЗА БЕЗ КОМПРОМИССОВ</h1>
+    <a href="#order" class="button-header">Заказать</a>
+</div>
+
+
+<div class="section">
+    <div class="text-block">
+        <h2>Состав и процесс изготовления</h2>
+        <p>Без муки, дрожжей и сахара —<br>
+            только пророщенные зерна.
+        </p>
+        <p>72 часа естественного<br>
+            ферментирования.
+        </p>
+        <p class="offset"><strong>Содержит в разы больше пользы,</strong><br>
+           <strong>чем обычный хлеб:</strong><br>
+        </p>
+        <p>В 50 раз больше витамина E;<br>
+            В 13 раз — B2;<br>
+            В 6 раз — B6;<br>
+            В 4 раза — B9;<br>
+            В 2–3 раза больше белка и <br>
+            природных антиоксидантов.
+        </p>
+    </div>
+    <img src="/images/oneBreadFirst.png" alt="Хлеб справа">
+</div>
+
+
+<div class="section reverse">
+    <div class="text-block">
+        <p><strong>Подходит для диабетиков —</strong> <br>
+            низкий гликемический индекс.
+        </p>
+        <p><strong>Улучшает</strong> иммунитет,<br>
+            пищеварение, обмен веществ,<br>
+            состояние кожи и волос.
+        </p>
+        <p><strong>Каждый ломтик — </strong>профилактика<br>
+            болезней и вклад в здоровую,<br>
+            долгую жизнь.
+        </p>
+
+        <a href="#order" class="button-order">Заказать хлеб</a>
+
+        <a href="/pdfFiles/breadResearch.pdf" class="download-link" download>
+            <strong>Скачать подробную информацию (PDF)</strong>
+        </a>
+    </div>
+
+    <img src="/images/oneBreadSecond.png" alt="Хлеб слева">
+</div>
+
+
+<div class="history-section">
+    <h2>История хлеба, созданного из заботы</h2>
+
+    <div class="history-layout">
+        <div class="left-column">
+            <img src="/images/producerStanding.png" alt="Галина Тян" class="author-photo">
+            <p class="author-caption">Галина Тян — основатель<br>
+                компании EcoDan.<br>
+                Разработала рецепт хлеба.
+            </p>
+        </div>
+
+        <div class="right-column">
+            <blockquote>
+                «Я всё чаще замечала, как у людей<br>
+                ухудшается здоровье. Онкология, диабет —<br>
+                и всё чаще причиной становятся продукты.<br>
+                Посмотрите на полки в магазинах — много<br>
+                дешёвого и ненатурального.»
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="text">
+        <p>
+            Так начался путь основательницы компании EcoDan, работающей с 2018 года.<br>
+            Она изучала литературу, свойства пророщенного зерна, экспериментировала с<br>
+            рецептом. Первые буханки были жёсткими, но постепенно удалось создать хлеб<br>
+            без муки, дрожжей и сахара — только пшеница, вода и соль.
+        </p>
+        <p>
+            Сначала хлеб пекли только для семьи. Позже — для друзей, а потом и для всех,<br>
+            кто ценит здоровье. Производство заняло полгода подготовки, включая<br>
+            лабораторные испытания. Сегодня хлеб выпускается в собственном цехе и<br>
+            продаётся в магазинах Бишкека.
+        </p>
+    </div>
+
+    <div class="history-footer">
+        <div class="red-bar"></div>
+        <p class="highlight-quote">
+            «Это не мягкая булка. Этот хлеб нужно жевать.<br>
+            Он питает — а не просто заполняет желудок.»
+        </p>
+        <img src="/images/producerSittingWithBread.png" alt="Автор с хлебом" class="author-photo">
+    </div>
+</div>
+
+
+<div id="order" class="order-section">
+    <h2>Оформите заказ</h2>
+
+    <div class="order-form-container">
+        <form class="order-form" method="POST" action="/order">
+            <input type="text" name="name" placeholder="Имя" required>
+            <input type="number" name="quantity" placeholder="Количество буханок" required>
+            <input type="text" name="address" placeholder="Адрес доставки" required>
+            <input type="tel" name="phone" placeholder="WhatsApp номер" required>
+            <textarea name="comment" placeholder="Комментарий"></textarea>
+
+            <button type="submit">Оформить заказ</button>
+        </form>
+
+        <img src="/images/breadsFabric.png" alt="Хлеб" class="order-image">
+    </div>
+</div>
+
+
+<div class="reviews-section">
+    <h2>Отзывы</h2>
+
+    <div class="review-card">
+        <h4>Салтанат Орозбекова <span class="stars">★★★★★</span></h4>
+        <p>По состоянию здоровья (аллергия) мне нельзя употреблять муку, дрожжи. Долго искала чем заменить хлеб. Покупала разные новомодные, диетические хлебцы. Но производители пишут на этикетке одно, а в составе совсем другое. Допустим “хлебцы кукурузные”, а в составе мука пшеничная и т.д. Хлеб из пророщенной пшеницы без добавления дрожжей от ЭкоДан EcoDan это действительно находка для меня. Хлеб настолько вкусный, чувствуется пророщенные зерна пшеницы. А самое главное полезно для здоровья. Употребляя этот хлеб от ЭкоДан Eco Dan аллергия отступила и не мучает. Употребляйте полезный продукт.</p>
+    </div>
+
+    <div class="review-card">
+        <h4>Назира Умарбековна <span class="stars">★★★★★</span></h4>
+        <p>ЛУЧШИЙ ХЛЕБ В МОЕЙ ЖИЗНИ!!! Вот правда, никакие лепешки  не стоят рядом с этим хлебушком) Если вы худеете, но и от хлеба пока отказаться не можете, то вам сюда - EcoDan. Полностью полезный и не менее вкусный! Питаюсь только им, иногда) А так жизнь без хлеба тоже возможно, но вот каждый раз, когда наступает это “иногда” что безумно хочется хлеба, я беру его... А сколько можно придумать с его применением. Например, сегодня я просто сделала малиновые, творожные бутеры с черносливками. Сытно и вкусно :)</p>
+    </div>
+
+    <div class="review-card">
+        <h4>sak.535 <span class="stars">★★★★★</span></h4>
+        <p>Спасибо вам, за такой чудесный хлебушек! Решила оставить публичный отзыв  здесь). Попробовав хлеб,первое, он кардинальо отличается от обыденных хлебов, которые сделаны не понятно из чего. Второе, не надо думать что все сразу! Ела примерно месяц - жкт в норме, кожа улучшилась, похудела) то есть, тот кто не может отказаться от хлеба и хочет похудеть - Рекомендую! Тот кто хочет стабилизировать жкт - рекомендую! А главное - здоровое питание :) EcoDan лучшие!</p>
+    </div>
+
+    <h3>Оставьте отзыв:</h3>
+    <form class="review-form" method="POST" action="/review">
+        <div class="name-rating-row">
+            <input type="text" name="username" placeholder="Имя пользователя" class="name-input" required>
+
+            <div class="star-rating">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+            </div>
+
+            <!-- input для оценки (заполняется через JS при клике по звезде) -->
+            <input type="hidden" name="rating" id="rating-input" value="0">
+        </div>
+
+        <textarea name="reviewText" placeholder="Отзыв" required></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-left">
+            <img src="/images/logoEcoDan.png" alt="Логотип" class="footer-logo">
+            <p class="footer-slogan">Хлеб для здоровья и долголетия</p>
+        </div>
+        <div class="footer-right">
+            <p>Город Бишкек</p>
+            <p>+(996) 706 770 238</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <img src="/images/socialForEcoDan.png" alt="Соцсети" class="footer-socials">
+        </div>
+        <div class="footer-bottom-right">
+            <p>© EcoDan, 2025</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

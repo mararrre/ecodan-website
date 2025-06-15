@@ -1,0 +1,487 @@
+/* Общие настройки */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dbe0c0;
+    color: #222;
+}
+
+/* Хэдер */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-bottom: 3px solid #466a0a;
+    background-color: #C3C9B1;
+}
+
+.header img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.header h1 {
+    font-family: Bahnschrift;
+    font-size: 30px;
+    margin-right: 35px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.button-header {
+    background-color: #466a0a;
+    color: #f0f0f0;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+    padding: 14px 28px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.section {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* Зеркальное расположение */
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+.section img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
+}
+
+/* Текстовый блок */
+.text-block {
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: #3c550f;
+    line-height: 1.5;
+}
+
+.section.reverse .text-block {
+    padding: 80px 80px 0px 0px;
+}
+
+.section.reverse p {
+    margin-bottom: 45px;
+}
+
+/* Заголовок */
+.text-block h2 {
+    font-size: 46px;
+    font-weight: bolder;
+    color: black;
+    margin: 40px 0px 20px 75px;
+    padding-bottom: 15px;
+    white-space: nowrap;
+    font-family: Bahnschrift;
+    text-transform: uppercase;
+}
+
+/* Текст */
+.text-block p {
+    padding: 0px 0px 25px 120px;
+    font-family: Bahnschrift;
+}
+
+.text-block .offset {
+    padding-left: 100px;
+    font-weight: bold;
+    color: #4e710e;
+    font-size: 30px;
+}
+
+
+/* Кнопка */
+.button-order {
+    display: inline-block;
+    background-color: #567d0c;
+    color: white;
+    padding: 12px 30px;
+    font-size: 28px;
+    font-family: Bahnschrift;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    border: none;
+    border-radius: 10px;
+    margin-left: 160px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.download-link {
+    display: block;
+    margin: 70px 150px 0px 0px;
+    font-family: Bahnschrift;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3c550f;
+    white-space: nowrap;
+}
+
+.history-section {
+    background-color: #C3C9B1;
+    padding: 30px 50px 60px 50px;
+    color: #222;
+    font-family: Bahnschrift;
+    line-height: 1.6;
+}
+
+/* Заголовок */
+.history-section h2 {
+    color: #9c2f2f;
+    font-size: 75px;
+    text-align: center;
+    letter-spacing: -5px;
+    font-weight: normal;
+}
+
+/* Фото + цитата */
+.history-layout {
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.left-column {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.author-photo {
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.author-caption {
+    font-size: 16px;
+    color: #a12c2c;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.right-column blockquote {
+    font-size: 35px;
+    font-weight: normal;
+    letter-spacing: 1.7px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.history-section .text {
+    margin: 20px 60px 15px 110px;
+    font-size: 27px;
+    font-weight: normal;
+}
+
+.history-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 15px 95px 40px 60px;
+}
+
+.red-bar {
+    height: 90px;
+    width: 5px;
+    background-color: #9c2f2f;
+    border-radius: 15px;
+
+}
+
+.highlight-quote {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    color: #a12c2c;
+    line-height: 1.5;
+    text-align: left;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+.history-footer .author-photo {
+    width: 180px;
+    height: auto;
+    margin-left: 130px;
+}
+
+
+.order-section {
+    background-color: #dbe0c0;
+    padding: 60px 80px 80px 80px;
+    font-family: Arial, sans-serif;
+}
+
+.order-section h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Bahnschrift;
+    color: #3c550f;
+    margin-bottom: 40px;
+}
+
+.order-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.order-form input,
+.order-form textarea {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    font-family: inherit;
+}
+
+.order-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.order-form button {
+    background-color: #567d0c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 0;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: background-color 0.2s;
+    width: 250px;
+    height: 60px;
+}
+
+.order-form button:hover {
+    background-color: #466a0a;
+}
+
+.order-image {
+    width: 40%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.reviews-section {
+    background-color:#C3C9B1;
+    padding: 40px 80px 90px 80px;
+    font-family: Bahnschrift;
+}
+
+.reviews-section h2 {
+    font-size: 60px;
+    color: #3c550f;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.review-card {
+    background-color: #f0f0f0;
+    padding: 20px 25px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.review-card h4 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.review-card p {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.reviews-section h3 {
+    font-size: 50px;
+    margin: 50px 0px 20px 0px;
+    color: #3c550f;
+    font-weight: bold;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.name-rating-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.review-form .name-input {
+    flex: 0 0 250px;
+    padding: 12px 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    font-family: inherit;
+    color: #333;
+}
+
+.star-rating {
+    display: flex;
+    gap: 6px;
+    font-size: 32px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.star-rating span {
+    color: #828181;
+    transition: color 0.1s;
+    cursor: pointer;
+}
+
+.star-rating span.active {
+    color: #ffc107;
+}
+
+.review-form textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    font-family: inherit;
+    color: #333;
+}
+
+.review-form button {
+    background-color: #567d0c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 0;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    width: 220px;
+    height: 50px;
+}
+
+.review-form button:hover {
+    background-color: #466a0a;
+}
+
+
+.footer {
+    background-color: #2A3505;
+    padding: 80px 120px 80px 100px;
+    font-size: 16px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+.footer-slogan {
+    font-size: 28px;
+    font-family: Inter;
+    font-style: italic;
+    margin: 0;
+    color: #f5f5f5;
+}
+
+.footer-right {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.footer-right p {
+    margin: 0;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: lighter;
+    color: #f5f5f5;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px;
+}
+
+.footer-socials {
+    height: 30px;
+}
+
+.footer-bottom-right p {
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 20px;
+}
